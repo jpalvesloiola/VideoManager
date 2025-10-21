@@ -1,0 +1,25 @@
+# Ignore the target directory
+target/
+
+# Ignore Maven wrapper files
+.mvn/
+
+# Ignore IDE files
+.idea/
+*.iml
+
+# Ignore log files
+*.log
+
+# Ignore Docker files
+Dockerfile
+docker-compose.yml
+
+# Ignore application properties
+src/main/resources/application.yml
+
+# Ignore SQL data files
+src/main/resources/data.sql
+
+# Ignore test files
+src/test/java/com/example/videomanager/VideoControllerTest.java
