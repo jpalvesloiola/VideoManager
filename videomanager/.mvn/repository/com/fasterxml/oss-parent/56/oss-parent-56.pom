@@ -233,9 +233,7 @@
             -->
           <groupId>com.google.code.maven-replacer-plugin</groupId>
           <artifactId>replacer</artifactId>
-<!--
-          <artifactId>maven-replacer-plugin</artifactId>
--->
+
           <version>${version.plugin.replacer}</version>
         </plugin>
         <plugin>

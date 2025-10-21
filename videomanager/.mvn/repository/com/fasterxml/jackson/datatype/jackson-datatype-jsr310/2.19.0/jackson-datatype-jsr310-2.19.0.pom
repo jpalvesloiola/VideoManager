@@ -36,9 +36,7 @@
     <javac.target.version>1.8</javac.target.version>
     <!-- Configuration properties for the OSGi maven-bundle-plugin -->
     <!-- import should be generated automatically from needed deps; export from simple package (include all) -->
-<!--
-    <osgi.export>${project.groupId}.jsr310.*;version=${project.version}</osgi.export>
--->
+
   </properties>
 
   <dependencies>

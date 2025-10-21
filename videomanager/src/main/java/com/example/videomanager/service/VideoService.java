@@ -4,17 +4,19 @@ import com.example.videomanager.model.Video;
 import com.example.videomanager.repository.VideoRepository;
 import com.example.videomanager.dto.VideoDto;
 import com.example.videomanager.exception.NotFoundException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class VideoService {
 
-    @Autowired
-    private VideoRepository videoRepository;
+    private static final String VIDEO_NOT_FOUND = "Video not found with id ";
+    private final VideoRepository videoRepository;
+
+    public VideoService(VideoRepository videoRepository) {
+        this.videoRepository = videoRepository;
+    }
 
     private VideoDto toDto(Video v) {
         return new VideoDto(v.getId(), v.getTitle(), v.getDescription(), v.getUrl());
@@ -25,12 +27,12 @@ public class VideoService {
     }
 
     public List<VideoDto> getAllVideos() {
-        return videoRepository.findAll().stream().map(this::toDto).collect(Collectors.toList());
+        return videoRepository.findAll().stream().map(this::toDto).toList();
     }
 
     public VideoDto getVideoById(Long id) {
         Video v = videoRepository.findById(id)
-                .orElseThrow(() -> new NotFoundException("Video not found with id " + id));
+                .orElseThrow(() -> new NotFoundException(VIDEO_NOT_FOUND + id));
         return toDto(v);
     }
 
@@ -42,7 +44,7 @@ public class VideoService {
 
     public VideoDto updateVideo(Long id, VideoDto videoDto) {
         Video video = videoRepository.findById(id)
-                .orElseThrow(() -> new NotFoundException("Video not found with id " + id));
+                .orElseThrow(() -> new NotFoundException(VIDEO_NOT_FOUND + id));
         video.setTitle(videoDto.getTitle());
         video.setDescription(videoDto.getDescription());
         video.setUrl(videoDto.getUrl());
@@ -52,7 +54,7 @@ public class VideoService {
 
     public void deleteVideo(Long id) {
         Video video = videoRepository.findById(id)
-                .orElseThrow(() -> new NotFoundException("Video not found with id " + id));
+                .orElseThrow(() -> new NotFoundException(VIDEO_NOT_FOUND + id));
         videoRepository.delete(video);
     }
 }

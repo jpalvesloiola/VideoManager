@@ -130,10 +130,6 @@
                     <execution>
                         <id>default-test</id>
                         <configuration>
-                            <!--<argLine>XXadd-opens ch.qos.logback.core/ch.qos.logback.core.testUtil=java.naming</argLine>-->
-                            <!--<argLine>add-opens ch.qos.logback.core/ch.qos.logback.core.testUtil=java.naming
-                               ==-add-opens org.tukaani.xz/org.tukaani.xz=ch.qos.logback.core
-                                         add-reads ch.qos.logback.core=ALL-UNNAMED</argLine>-->
                             <argLine>
                                 --add-opens ch.qos.logback.core/ch.qos.logback.core.testUtil=java.naming
 
@@ -141,12 +137,10 @@
                             </argLine>
                             <parallel>classes</parallel>
                             <threadCount>20</threadCount>
-                            <!--<useUnlimitedThreads>false</useUnlimitedThreads>-->
                             <forkCount>5</forkCount>
                             <reuseForks>true</reuseForks>
                             <reportFormat>plain</reportFormat>
                             <trimStackTrace>false</trimStackTrace>
-                            <!-- See https://issues.apache.org/jira/browse/SUREFIRE-1265 -->
                             <childDelegation>true</childDelegation>
                             <excludes>
                                 <exclude>**/All*Test.java</exclude>

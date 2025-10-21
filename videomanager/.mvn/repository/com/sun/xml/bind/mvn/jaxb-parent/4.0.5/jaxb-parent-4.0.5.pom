@@ -612,9 +612,6 @@
                     <name>!dev</name>
                 </property>
             </activation>
-            <!--            <properties>
-                <skipOsgiTests>false</skipOsgiTests>
-            </properties>-->
             <modules>
                 <module>docs</module>
                 <module>tools/osgi_tests</module>

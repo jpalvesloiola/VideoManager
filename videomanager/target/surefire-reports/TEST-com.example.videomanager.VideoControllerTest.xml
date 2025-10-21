@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="VideoControllerTest" time="6.972" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.videomanager.VideoControllerTest" time="7.025" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Users\jpalv\.jdks\openjdk-22.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\jpalv\AppData\Local\Temp\surefire8149683132924906774\surefirebooter-20251020220335628_3.jar C:\Users\jpalv\AppData\Local\Temp\surefire8149683132924906774 2025-10-20T22-03-35_500-jvmRun1 surefire-20251020220335628_1tmp surefire_0-20251020220335628_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\jpalv\AppData\Local\Temp\surefire5812661673547859428\surefirebooter-20251020222900053_3.jar C:\Users\jpalv\AppData\Local\Temp\surefire5812661673547859428 2025-10-20T22-28-59_935-jvmRun1 surefire-20251020222900053_1tmp surefire_0-20251020222900053_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager\target\test-classes;C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager\target\classes;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.5.0\spring-boot-starter-web-3.5.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-starter\3.5.0\spring-boot-starter-3.5.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot\3.5.0\spring-boot-3.5.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.5.0\spring-boot-autoconfigure-3.5.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.5.0\spring-boot-starter-logging-3.5.0.jar;C:\Users\jpalv\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\jpalv\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\jpalv\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\jpalv\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\jpalv\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\jpalv\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\jpalv\.m2\repository\org\yaml\snakeyaml\2.4\snakeyaml-2.4.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.5.0\spring-boot-starter-json-3.5.0.jar;C:\Users\jpalv\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.0\jackson-databind-2.19.0.jar;C:\Users\jpalv\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.0\jackson-annotations-2.19.0.jar;C:\Users\jpalv\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.0\jackson-core-2.19.0.jar;C:\Users\jpalv\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.19.0\jackson-datatype-jdk8-2.19.0.jar;C:\Users\jpalv\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.19.0\jackson-datatype-jsr310-2.19.0.jar;C:\Users\jpalv\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.19.0\jackson-module-parameter-names-2.19.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.5.0\spring-boot-starter-tomcat-3.5.0.jar;C:\Users\jpalv\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.41\tomcat-embed-core-10.1.41.jar;C:\Users\jpalv\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.41\tomcat-embed-el-10.1.41.jar;C:\Users\jpalv\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.41\tomcat-embed-websocket-10.1.41.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-web\6.2.7\spring-web-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-beans\6.2.7\spring-beans-6.2.7.jar;C:\Users\jpalv\.m2\repository\io\micrometer\micrometer-observation\1.15.0\micrometer-observation-1.15.0.jar;C:\Users\jpalv\.m2\repository\io\micrometer\micrometer-commons\1.15.0\micrometer-commons-1.15.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-webmvc\6.2.7\spring-webmvc-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-aop\6.2.7\spring-aop-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-context\6.2.7\spring-context-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-expression\6.2.7\spring-expression-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.5.0\spring-boot-starter-data-jpa-3.5.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.5.0\spring-boot-starter-jdbc-3.5.0.jar;C:\Users\jpalv\.m2\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-jdbc\6.2.7\spring-jdbc-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\hibernate\orm\hibernate-core\6.6.15.Final\hibernate-core-6.6.15.Final.jar;C:\Users\jpalv\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\jpalv\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\jpalv\.m2\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Users\jpalv\.m2\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Users\jpalv\.m2\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Users\jpalv\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\jpalv\.m2\repository\net\bytebuddy\byte-buddy\1.17.5\byte-buddy-1.17.5.jar;C:\Users\jpalv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\jpalv\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\jpalv\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\jpalv\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\jpalv\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\jpalv\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\jpalv\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\data\spring-data-jpa\3.5.0\spring-data-jpa-3.5.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\data\spring-data-commons\3.5.0\spring-data-commons-3.5.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-orm\6.2.7\spring-orm-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-tx\6.2.7\spring-tx-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-aspects\6.2.7\spring-aspects-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\aspectj\aspectjweaver\1.9.24\aspectjweaver-1.9.24.jar;C:\Users\jpalv\.m2\repository\com\mysql\mysql-connector-j\9.2.0\mysql-connector-j-9.2.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.5.0\spring-boot-starter-test-3.5.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-test\3.5.0\spring-boot-test-3.5.0.jar;C:\Users\jpalv\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.5.0\spring-boot-test-autoconfigure-3.5.0.jar;C:\Users\jpalv\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\jpalv\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\jpalv\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\jpalv\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\jpalv\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\jpalv\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\jpalv\.m2\repository\org\assertj\assertj-core\3.27.3\assertj-core-3.27.3.jar;C:\Users\jpalv\.m2\repository\org\awaitility\awaitility\4.3.0\awaitility-4.3.0.jar;C:\Users\jpalv\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\jpalv\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Users\jpalv\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\jpalv\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jpalv\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\jpalv\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jpalv\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Users\jpalv\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\jpalv\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Users\jpalv\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar;C:\Users\jpalv\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.5\byte-buddy-agent-1.17.5.jar;C:\Users\jpalv\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\jpalv\.m2\repository\org\mockito\mockito-junit-jupiter\5.17.0\mockito-junit-jupiter-5.17.0.jar;C:\Users\jpalv\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\jpalv\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-core\6.2.7\spring-core-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-jcl\6.2.7\spring-jcl-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\springframework\spring-test\6.2.7\spring-test-6.2.7.jar;C:\Users\jpalv\.m2\repository\org\xmlunit\xmlunit-core\2.10.1\xmlunit-core-2.10.1.jar;C:\Users\jpalv\.m2\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="C:\Users\jpalv\AppData\Local\Temp\surefire8149683132924906774\surefirebooter-20251020220335628_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jpalv\AppData\Local\Temp\surefire5812661673547859428\surefirebooter-20251020222900053_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2+9-70"/>
@@ -52,7 +52,7 @@
     <property name="user.dir" value="C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="26172"/>
+    <property name="PID" value="25676"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -64,7 +64,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testDeleteVideo" classname="VideoControllerTest" time="0.534">
+  <testcase name="testDeleteVideo" classname="com.example.videomanager.VideoControllerTest" time="0.547">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -75,19 +75,19 @@
 
  :: Spring Boot ::                (v3.5.0)
 
-2025-10-20T22:03:37.069-03:00  INFO 26172 --- [           main] VideoControllerTest                      : Starting VideoControllerTest using Java 22.0.2 with PID 26172 (started by Calango Virtual in C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager)
-2025-10-20T22:03:37.071-03:00  INFO 26172 --- [           main] VideoControllerTest                      : No active profile set, falling back to 1 default profile: "default"
-2025-10-20T22:03:38.027-03:00  INFO 26172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-20T22:03:38.092-03:00  INFO 26172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
-2025-10-20T22:03:38.495-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-10-20T22:03:38.722-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2025-10-20T22:03:38.723-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-10-20T22:03:38.919-03:00  INFO 26172 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-20T22:03:38.979-03:00  INFO 26172 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
-2025-10-20T22:03:39.021-03:00  INFO 26172 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-20T22:03:39.427-03:00  INFO 26172 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-20T22:03:39.490-03:00  WARN 26172 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-20T22:03:39.512-03:00  INFO 26172 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-10-20T22:29:01.437-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : Starting VideoControllerTest using Java 22.0.2 with PID 25676 (started by Calango Virtual in C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager)
+2025-10-20T22:29:01.439-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T22:29:02.357-03:00  INFO 25676 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-20T22:29:02.414-03:00  INFO 25676 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2025-10-20T22:29:02.843-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-20T22:29:03.065-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-10-20T22:29:03.067-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-20T22:29:03.282-03:00  INFO 25676 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-20T22:29:03.385-03:00  INFO 25676 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-10-20T22:29:03.432-03:00  INFO 25676 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-20T22:29:03.877-03:00  INFO 25676 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-20T22:29:03.934-03:00  WARN 25676 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-20T22:29:03.957-03:00  INFO 25676 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -95,22 +95,22 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-20T22:03:40.180-03:00  INFO 26172 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-20T22:29:04.576-03:00  INFO 25676 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists video cascade 
 Hibernate: create table video (id bigint generated by default as identity, description varchar(255), metadata varchar(255), title varchar(255), url varchar(255), primary key (id))
-2025-10-20T22:03:40.201-03:00  INFO 26172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-20T22:03:40.551-03:00  WARN 26172 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-20T22:03:41.072-03:00  INFO 26172 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-10-20T22:03:41.072-03:00  INFO 26172 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-10-20T22:03:41.075-03:00  INFO 26172 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2025-10-20T22:03:41.112-03:00  INFO 26172 --- [           main] VideoControllerTest                      : Started VideoControllerTest in 4.514 seconds (process running for 5.36)
+2025-10-20T22:29:04.597-03:00  INFO 25676 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20T22:29:04.949-03:00  WARN 25676 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-20T22:29:05.489-03:00  INFO 25676 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-20T22:29:05.489-03:00  INFO 25676 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-20T22:29:05.491-03:00  INFO 25676 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-10-20T22:29:05.513-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : Started VideoControllerTest in 4.506 seconds (process running for 5.335)
 Hibernate: insert into video (description,metadata,title,url,id) values (?,?,?,?,default)
 Hibernate: select v1_0.id,v1_0.description,v1_0.metadata,v1_0.title,v1_0.url from video v1_0 where v1_0.id=?
 Hibernate: delete from video where id=?
-2025-10-20T22:03:41.652-03:00  INFO 26172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20T22:29:06.062-03:00  INFO 25676 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 Hibernate: drop table if exists video cascade 
-2025-10-20T22:03:41.655-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-10-20T22:03:41.657-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-20T22:29:06.065-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-20T22:29:06.067-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 ]]></system-out>
     <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (C:\Users\jpalv\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.5\byte-buddy-agent-1.17.5.jar)
@@ -119,7 +119,7 @@ WARNING: If a serviceability tool is not in use, please run with -Djdk.instrumen
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="testGetVideo" classname="VideoControllerTest" time="0.178">
+  <testcase name="testGetVideo" classname="com.example.videomanager.VideoControllerTest" time="0.195">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -130,18 +130,18 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 
  :: Spring Boot ::                (v3.5.0)
 
-2025-10-20T22:03:41.695-03:00  INFO 26172 --- [           main] VideoControllerTest                      : Starting VideoControllerTest using Java 22.0.2 with PID 26172 (started by Calango Virtual in C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager)
-2025-10-20T22:03:41.695-03:00  INFO 26172 --- [           main] VideoControllerTest                      : No active profile set, falling back to 1 default profile: "default"
-2025-10-20T22:03:41.836-03:00  INFO 26172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-20T22:03:41.845-03:00  INFO 26172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
-2025-10-20T22:03:41.904-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-10-20T22:03:41.905-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
-2025-10-20T22:03:41.906-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-10-20T22:03:41.923-03:00  INFO 26172 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-20T22:03:41.926-03:00  INFO 26172 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-20T22:03:41.936-03:00  INFO 26172 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-20T22:03:41.938-03:00  WARN 26172 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-20T22:03:41.939-03:00  INFO 26172 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-10-20T22:29:06.103-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : Starting VideoControllerTest using Java 22.0.2 with PID 25676 (started by Calango Virtual in C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager)
+2025-10-20T22:29:06.103-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T22:29:06.233-03:00  INFO 25676 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-20T22:29:06.243-03:00  INFO 25676 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-10-20T22:29:06.304-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-20T22:29:06.306-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2025-10-20T22:29:06.306-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-20T22:29:06.321-03:00  INFO 25676 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-20T22:29:06.323-03:00  INFO 25676 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-20T22:29:06.333-03:00  INFO 25676 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-20T22:29:06.335-03:00  WARN 25676 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-20T22:29:06.336-03:00  INFO 25676 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -149,24 +149,24 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-20T22:03:41.961-03:00  INFO 26172 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-20T22:29:06.362-03:00  INFO 25676 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists video cascade 
 Hibernate: create table video (id bigint generated by default as identity, description varchar(255), metadata varchar(255), title varchar(255), url varchar(255), primary key (id))
-2025-10-20T22:03:41.963-03:00  INFO 26172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-20T22:03:42.010-03:00  WARN 26172 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-20T22:03:42.092-03:00  INFO 26172 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-10-20T22:03:42.092-03:00  INFO 26172 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-10-20T22:03:42.093-03:00  INFO 26172 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2025-10-20T22:03:42.097-03:00  INFO 26172 --- [           main] VideoControllerTest                      : Started VideoControllerTest in 0.429 seconds (process running for 6.345)
+2025-10-20T22:29:06.365-03:00  INFO 25676 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20T22:29:06.413-03:00  WARN 25676 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-20T22:29:06.521-03:00  INFO 25676 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-20T22:29:06.521-03:00  INFO 25676 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-20T22:29:06.521-03:00  INFO 25676 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-10-20T22:29:06.527-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : Started VideoControllerTest in 0.452 seconds (process running for 6.35)
 Hibernate: insert into video (description,metadata,title,url,id) values (?,?,?,?,default)
 Hibernate: select v1_0.id,v1_0.description,v1_0.metadata,v1_0.title,v1_0.url from video v1_0 where v1_0.id=?
-2025-10-20T22:03:42.247-03:00  INFO 26172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20T22:29:06.701-03:00  INFO 25676 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 Hibernate: drop table if exists video cascade 
-2025-10-20T22:03:42.249-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2025-10-20T22:03:42.276-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-10-20T22:29:06.703-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-10-20T22:29:06.723-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateVideo" classname="VideoControllerTest" time="0.108">
+  <testcase name="testUpdateVideo" classname="com.example.videomanager.VideoControllerTest" time="0.128">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -177,18 +177,18 @@ Hibernate: drop table if exists video cascade
 
  :: Spring Boot ::                (v3.5.0)
 
-2025-10-20T22:03:42.306-03:00  INFO 26172 --- [           main] VideoControllerTest                      : Starting VideoControllerTest using Java 22.0.2 with PID 26172 (started by Calango Virtual in C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager)
-2025-10-20T22:03:42.306-03:00  INFO 26172 --- [           main] VideoControllerTest                      : No active profile set, falling back to 1 default profile: "default"
-2025-10-20T22:03:42.450-03:00  INFO 26172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-20T22:03:42.460-03:00  INFO 26172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
-2025-10-20T22:03:42.510-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2025-10-20T22:03:42.511-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn19: url=jdbc:h2:mem:testdb user=SA
-2025-10-20T22:03:42.512-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2025-10-20T22:03:42.524-03:00  INFO 26172 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-20T22:03:42.527-03:00  INFO 26172 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-20T22:03:42.535-03:00  INFO 26172 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-20T22:03:42.536-03:00  WARN 26172 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-20T22:03:42.537-03:00  INFO 26172 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-10-20T22:29:06.752-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : Starting VideoControllerTest using Java 22.0.2 with PID 25676 (started by Calango Virtual in C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager)
+2025-10-20T22:29:06.752-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T22:29:06.888-03:00  INFO 25676 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-20T22:29:06.899-03:00  INFO 25676 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-10-20T22:29:06.964-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-10-20T22:29:06.966-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+2025-10-20T22:29:06.966-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-10-20T22:29:06.978-03:00  INFO 25676 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-20T22:29:06.982-03:00  INFO 25676 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-20T22:29:06.989-03:00  INFO 25676 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-20T22:29:06.990-03:00  WARN 25676 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-20T22:29:06.990-03:00  INFO 25676 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -196,25 +196,25 @@ Hibernate: drop table if exists video cascade
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-20T22:03:42.557-03:00  INFO 26172 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-20T22:29:07.020-03:00  INFO 25676 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists video cascade 
 Hibernate: create table video (id bigint generated by default as identity, description varchar(255), metadata varchar(255), title varchar(255), url varchar(255), primary key (id))
-2025-10-20T22:03:42.559-03:00  INFO 26172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-20T22:03:42.593-03:00  WARN 26172 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-20T22:03:42.668-03:00  INFO 26172 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-10-20T22:03:42.668-03:00  INFO 26172 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-10-20T22:03:42.668-03:00  INFO 26172 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2025-10-20T22:03:42.674-03:00  INFO 26172 --- [           main] VideoControllerTest                      : Started VideoControllerTest in 0.395 seconds (process running for 6.922)
+2025-10-20T22:29:07.026-03:00  INFO 25676 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20T22:29:07.093-03:00  WARN 25676 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-20T22:29:07.174-03:00  INFO 25676 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-20T22:29:07.174-03:00  INFO 25676 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-20T22:29:07.175-03:00  INFO 25676 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-10-20T22:29:07.180-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : Started VideoControllerTest in 0.453 seconds (process running for 7.003)
 Hibernate: insert into video (description,metadata,title,url,id) values (?,?,?,?,default)
 Hibernate: select v1_0.id,v1_0.description,v1_0.metadata,v1_0.title,v1_0.url from video v1_0 where v1_0.id=?
 Hibernate: update video set description=?,metadata=?,title=?,url=? where id=?
-2025-10-20T22:03:42.772-03:00  INFO 26172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20T22:29:07.279-03:00  INFO 25676 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 Hibernate: drop table if exists video cascade 
-2025-10-20T22:03:42.773-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2025-10-20T22:03:42.783-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-10-20T22:29:07.281-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-10-20T22:29:07.309-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateVideo" classname="VideoControllerTest" time="0.044">
+  <testcase name="testCreateVideo" classname="com.example.videomanager.VideoControllerTest" time="0.02">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -225,18 +225,18 @@ Hibernate: drop table if exists video cascade
 
  :: Spring Boot ::                (v3.5.0)
 
-2025-10-20T22:03:42.809-03:00  INFO 26172 --- [           main] VideoControllerTest                      : Starting VideoControllerTest using Java 22.0.2 with PID 26172 (started by Calango Virtual in C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager)
-2025-10-20T22:03:42.810-03:00  INFO 26172 --- [           main] VideoControllerTest                      : No active profile set, falling back to 1 default profile: "default"
-2025-10-20T22:03:42.932-03:00  INFO 26172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-20T22:03:42.941-03:00  INFO 26172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
-2025-10-20T22:03:42.986-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2025-10-20T22:03:42.988-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn25: url=jdbc:h2:mem:testdb user=SA
-2025-10-20T22:03:42.988-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2025-10-20T22:03:43.002-03:00  INFO 26172 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-20T22:03:43.004-03:00  INFO 26172 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-20T22:03:43.011-03:00  INFO 26172 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-20T22:03:43.013-03:00  WARN 26172 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-20T22:03:43.013-03:00  INFO 26172 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-10-20T22:29:07.334-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : Starting VideoControllerTest using Java 22.0.2 with PID 25676 (started by Calango Virtual in C:\Users\jpalv\OneDrive\Área de Trabalho\VideoManager\videomanager)
+2025-10-20T22:29:07.335-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T22:29:07.464-03:00  INFO 25676 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-20T22:29:07.473-03:00  INFO 25676 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-10-20T22:29:07.515-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-10-20T22:29:07.517-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn28: url=jdbc:h2:mem:testdb user=SA
+2025-10-20T22:29:07.518-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-10-20T22:29:07.530-03:00  INFO 25676 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-20T22:29:07.532-03:00  INFO 25676 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-20T22:29:07.539-03:00  INFO 25676 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-20T22:29:07.540-03:00  WARN 25676 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-20T22:29:07.541-03:00  INFO 25676 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -244,21 +244,21 @@ Hibernate: drop table if exists video cascade
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-20T22:03:43.048-03:00  INFO 26172 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-20T22:29:07.562-03:00  INFO 25676 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists video cascade 
 Hibernate: create table video (id bigint generated by default as identity, description varchar(255), metadata varchar(255), title varchar(255), url varchar(255), primary key (id))
-2025-10-20T22:03:43.066-03:00  INFO 26172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-20T22:03:43.104-03:00  WARN 26172 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-20T22:03:43.172-03:00  INFO 26172 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-10-20T22:03:43.172-03:00  INFO 26172 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-10-20T22:03:43.173-03:00  INFO 26172 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2025-10-20T22:03:43.182-03:00  INFO 26172 --- [           main] VideoControllerTest                      : Started VideoControllerTest in 0.395 seconds (process running for 7.43)
+2025-10-20T22:29:07.564-03:00  INFO 25676 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20T22:29:07.601-03:00  WARN 25676 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-20T22:29:07.665-03:00  INFO 25676 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-20T22:29:07.665-03:00  INFO 25676 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-20T22:29:07.665-03:00  INFO 25676 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-10-20T22:29:07.671-03:00  INFO 25676 --- [           main] c.e.videomanager.VideoControllerTest     : Started VideoControllerTest in 0.358 seconds (process running for 7.493)
 Hibernate: insert into video (description,metadata,title,url,id) values (?,?,?,?,default)
 Hibernate: insert into video (description,metadata,title,url,id) values (?,?,?,?,default)
-2025-10-20T22:03:43.199-03:00  INFO 26172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20T22:29:07.687-03:00  INFO 25676 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 Hibernate: drop table if exists video cascade 
-2025-10-20T22:03:43.200-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2025-10-20T22:03:43.227-03:00  INFO 26172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-10-20T22:29:07.688-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-10-20T22:29:07.691-03:00  INFO 25676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
 ]]></system-out>
   </testcase>
 </testsuite>

@@ -3,7 +3,6 @@ package com.example.videomanager.controller;
 import com.example.videomanager.dto.VideoDto;
 import com.example.videomanager.model.Video;
 import com.example.videomanager.service.VideoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,8 +12,11 @@ import java.util.List;
 @RequestMapping("/videos")
 public class VideoController {
 
-    @Autowired
-    private VideoService videoService;
+    private final VideoService videoService;
+
+    public VideoController(VideoService videoService) {
+        this.videoService = videoService;
+    }
 
     @PostMapping
     public ResponseEntity<VideoDto> createVideo(@RequestBody VideoDto videoDto) {

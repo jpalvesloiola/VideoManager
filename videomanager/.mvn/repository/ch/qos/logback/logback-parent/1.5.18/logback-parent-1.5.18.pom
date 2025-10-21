@@ -81,7 +81,6 @@
     <jackson.version>2.15.0</jackson.version>
     <xz.version>1.10</xz.version>
 
-    <!--<jansi.version>1.18</jansi.version>-->
     <jansi.version>2.4.0</jansi.version>
 
     <mockito-core.version>4.8.0</mockito-core.version>
@@ -432,7 +431,6 @@
         <version>${maven-jxr-plugin.version}</version>
         <configuration>
           <aggregate>true</aggregate>
-          <!--<javadocDir>target/site/apidocs/</javadocDir>-->
           <linkJavadoc>false</linkJavadoc>
         </configuration>
       </plugin>
@@ -452,18 +450,7 @@
 
   <reporting>
     <plugins>
-      <!--
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jxr-plugin</artifactId>
-        <version>2.5</version>
-        <configuration>
-          <aggregate>true</aggregate>
-          <javadocDir>target/site/apidocs/</javadocDir>
-          <linkJavadoc>true</linkJavadoc>
-        </configuration>
-      </plugin>
-      -->
+      
 
 
 
