@@ -1,9 +1,20 @@
 package com.example.videomanager.dto;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 public class VideoDto {
     private Long id;
+
+    @NotBlank(message = "title must not be blank")
+    @Size(max = 255)
     private String title;
+
+    @Size(max = 1000)
     private String description;
+
+    @NotBlank(message = "url must not be blank")
+    @Size(max = 2000)
     private String url;
 
     public VideoDto() {

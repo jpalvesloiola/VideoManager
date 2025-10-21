@@ -3,6 +3,7 @@ package com.example.videomanager.controller;
 import com.example.videomanager.dto.VideoDto;
 import com.example.videomanager.model.Video;
 import com.example.videomanager.service.VideoService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +20,7 @@ public class VideoController {
     }
 
     @PostMapping
-    public ResponseEntity<VideoDto> createVideo(@RequestBody VideoDto videoDto) {
+    public ResponseEntity<VideoDto> createVideo(@Valid @RequestBody VideoDto videoDto) {
         VideoDto createdVideo = videoService.createVideo(videoDto);
         return ResponseEntity.status(201).body(createdVideo);
     }
@@ -37,7 +38,7 @@ public class VideoController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<VideoDto> updateVideo(@PathVariable Long id, @RequestBody VideoDto videoDto) {
+    public ResponseEntity<VideoDto> updateVideo(@PathVariable Long id, @Valid @RequestBody VideoDto videoDto) {
         VideoDto updatedVideo = videoService.updateVideo(id, videoDto);
         return ResponseEntity.ok(updatedVideo);
     }
