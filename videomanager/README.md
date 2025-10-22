@@ -48,6 +48,18 @@ VideoManager
 
 ## Como Executar
 
+### Com Docker
+
+Para executar a aplicação com Docker, utilize o Docker Compose:
+
+```
+sudo docker-compose up -d
+```
+
+A API estará disponível em `http://localhost:8080`.
+
+### Localmente
+
 1. **Clone o repositório:**
    ```
    git clone <URL_DO_REPOSITORIO>
@@ -62,9 +74,21 @@ VideoManager
 3. **Acesse a API:**
    A API estará disponível em `http://localhost:8080`.
 
+## Endpoints da API
+
+- `POST /videos`: Cria um novo vídeo.
+- `GET /videos`: Retorna todos os vídeos.
+- `GET /videos/{id}`: Retorna um vídeo pelo ID.
+- `PUT /videos/{id}`: Atualiza um vídeo existente.
+- `DELETE /videos/{id}`: Deleta um vídeo.
+
+## Monitoramento
+
+A aplicação expõe métricas no formato Prometheus no endpoint `/actuator/prometheus`.
+
 ## Dependências
 
-As dependências do projeto estão definidas no arquivo `pom.xml`. Certifique-se de que todas as dependências necessárias estão incluídas para o funcionamento correto da aplicação.
+As dependências do projeto estão definidas no arquivo `pom.xml`.
 
 ## Contribuição
 

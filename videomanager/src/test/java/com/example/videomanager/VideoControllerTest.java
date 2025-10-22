@@ -63,4 +63,12 @@ class VideoControllerTest {
         mockMvc.perform(delete("/videos/" + savedVideo.id()))
                 .andExpect(status().isNoContent());
     }
+
+    @Test
+    void testCreateVideoWithInvalidUrl() throws Exception {
+        mockMvc.perform(post("/videos")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"title\":\"New Video\",\"description\":\"New Description\",\"url\":\"invalid-url\"}"))
+                .andExpect(status().isBadRequest());
+    }
 }
