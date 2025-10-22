@@ -29,11 +29,7 @@ class VideoControllerTest {
 
     @BeforeEach
     void setUp() {
-        // Criar um vídeo de teste no banco
-        VideoDto videoDto = new VideoDto();
-        videoDto.setTitle("Test Video");
-        videoDto.setDescription("Test Description");
-        videoDto.setUrl("http://testurl.com");
+        VideoDto videoDto = new VideoDto(null, "Test Video", "Test Description", "http://testurl.com");
         savedVideo = videoService.createVideo(videoDto);
     }
 
@@ -56,14 +52,14 @@ class VideoControllerTest {
 
     @Test
     void testGetVideo() throws Exception {
-        mockMvc.perform(get("/videos/" + savedVideo.getId()))
+        mockMvc.perform(get("/videos/" + savedVideo.id()))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.title").value("Test Video"));
     }
 
     @Test
     void testUpdateVideo() throws Exception {
-        mockMvc.perform(put("/videos/" + savedVideo.getId())
+        mockMvc.perform(put("/videos/" + savedVideo.id())
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{\"title\":\"Updated Video\",\"description\":\"Updated Description\",\"url\":\"http://updatedurl.com\"}"))
                 .andExpect(status().isOk())
@@ -72,7 +68,7 @@ class VideoControllerTest {
 
     @Test
     void testDeleteVideo() throws Exception {
-        mockMvc.perform(delete("/videos/" + savedVideo.getId()))
+        mockMvc.perform(delete("/videos/" + savedVideo.id()))
                 .andExpect(status().isNoContent());
     }
 }
