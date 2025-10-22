@@ -1,7 +1,6 @@
 package com.example.videomanager.controller;
 
 import com.example.videomanager.dto.VideoDto;
-import com.example.videomanager.model.Video;
 import com.example.videomanager.service.VideoService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
