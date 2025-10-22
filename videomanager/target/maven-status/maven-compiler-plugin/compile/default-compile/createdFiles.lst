@@ -1,7 +1,0 @@
-com\example\videomanager\service\VideoService.class
-com\example\videomanager\exception\NotFoundException.class
-com\example\videomanager\repository\VideoRepository.class
-com\example\videomanager\VideoManagerApplication.class
-com\example\videomanager\model\Video.class
-com\example\videomanager\controller\VideoController.class
-com\example\videomanager\dto\VideoDto.class

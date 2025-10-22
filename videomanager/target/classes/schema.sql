@@ -1,7 +1,0 @@
-CREATE TABLE IF NOT EXISTS video (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    description TEXT,
-    url VARCHAR(255) NOT NULL,
-    metadata VARCHAR(1000)
-);
