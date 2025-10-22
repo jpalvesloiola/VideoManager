@@ -1,68 +1,91 @@
+# 📽️ VideoManager API
 
-# 📽️ Projeto VideoManager com Spring Boot e Docker
+Projeto de uma API REST para gerenciamento de vídeos, construída com Java 21, Spring Boot 3 e MySQL 8. O projeto está totalmente containerizado com Docker e expõe métricas para monitoramento com Prometheus.
 
-Bem-vindo ao repositório do VideoManager, uma API REST para gerenciamento de vídeos, construída com Spring Boot, Docker e diversas tecnologias modernas para facilitar o desenvolvimento, deploy e monitoramento.
+## ✅ Tecnologias Utilizadas
 
-## 🧩 Visão Geral
+- **Java 21**
+- **Spring Boot 3** (Web, Data JPA, Validation, Actuator)
+- **MySQL 8.0**
+- **Hibernate 6**
+- **Maven**
+- **Docker & Docker Compose**
+- **Micrometer & Prometheus** para métricas
 
-* 🚀 **Objetivo:** Criar uma API para cadastro, armazenamento, conversão e monitoramento de vídeos.
-* 🛠️ **Tecnologias:** Java, Spring Boot, MySQL, Docker, AWS (EC2, S3), Prometheus, Grafana, FFmpeg.
+## ⚙️ Pré-requisitos
 
+- Java 21+
+- Maven 3.8+
+- Docker
+- Docker Compose
 
-## ⚙️ Funcionalidades
+## 🚀 Como Executar o Projeto
 
-* 🎞️ Cadastro e gerenciamento de vídeos com metadados.
-* 🐳 Containerização da aplicação e banco com Docker.
-* ☁️ Deploy na AWS com EC2 e armazenamento em S3.
-* 📊 Monitoramento com Prometheus e dashboards no Grafana.
-* 🔄 Conversão e processamento de vídeos usando FFmpeg.
+Existem duas maneiras de executar a aplicação:
 
+### 1. Usando Docker Compose (Recomendado)
 
-## 📂 Estrutura do Repositório
+Este é o método mais simples. Ele irá construir a imagem da aplicação e subir os contêineres da API e do banco de dados de uma vez só.
 
+1.  **Construa o JAR da aplicação:**
+    ```bash
+    cd videomanager
+    ./mvnw package
+    ```
+
+2.  **Suba os contêineres:**
+    ```bash
+    sudo docker compose up -d
+    ```
+
+A API estará disponível em `http://localhost:8080`.
+
+### 2. Executando Localmente
+
+Este método é útil para desenvolvimento e depuração.
+
+1.  **Inicie o banco de dados com Docker:**
+    ```bash
+    cd videomanager
+    sudo docker compose up -d db
+    ```
+
+2.  **Construa o JAR da aplicação:**
+    ```bash
+    ./mvnw package
+    ```
+
+3.  **Execute o JAR:**
+    ```bash
+    java -jar target/videomanager-0.0.1-SNAPSHOT.jar
+    ```
+
+A API estará disponível em `http://localhost:8080`.
+
+## 📊 Monitoramento com Prometheus
+
+Com a aplicação em execução, você pode acessar o endpoint de métricas, que está pronto para ser consumido por um servidor Prometheus.
+
+- **URL do Endpoint:** `http://localhost:8080/actuator/prometheus`
+
+## 📖 Endpoints da API
+
+- `POST /videos`: Cria um novo vídeo.
+- `GET /videos`: Retorna uma lista de todos os vídeos.
+- `GET /videos/{id}`: Retorna um vídeo específico pelo seu ID.
+- `PUT /videos/{id}`: Atualiza um vídeo existente.
+- `DELETE /videos/{id}`: Deleta um vídeo.
+
+### Exemplo de corpo para `POST /videos`:
+
+```json
+{
+  "title": "Meu Vídeo Incrível",
+  "description": "Uma descrição detalhada do vídeo.",
+  "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+}
 ```
-videomanager/
-├── src/
-│   └── main/java/com/example/videomanager/
-│       ├── controller/
-│       ├── service/
-│       ├── model/
-│       └── repository/
-├── Dockerfile
-├── docker-compose.yml
-├── prometheus.yml
-├── README.md
-```
-
-## 🚀 Como Começar
-
-1. Clone o repositório:
-   ```
-   git clone https://github.com/seuusuario/videomanager.git
-   cd videomanager
-   ```
-3. Configure o banco MySQL no [`docker-compose.yml`](https://docker-compose.yml).  
-4. Construa e rode os containers:
-   ```
-   docker-compose up --build
-   ```
-6. Acesse a API em `http://localhost:8080`.
-
-## 📚 Referências
-
-* [Spring Boot para Iniciantes](https://douglasnickson.com.br/2025/09/14/spring-boot-para-iniciantes-construindo-apis-rest-do-zero/) 🟦  
-* [Guia Docker para API Java](https://dev.to/diegobrandao/guia-passo-a-passo-deploy-de-uma-api-rest-java-no-docker-33mp) 🐳  
-* [Deploy Java na AWS](https://comoprogramarjava.com.br/deploy-de-aplicacoes-java-na-aws/) ☁️  
-* [Monitoramento com Grafana e Prometheus](https://codeinloop.com.br/fazendo-monitoramento-de-suas-apps-com-grafana-prometheus-via-docker/) 📊  
-* [Comandos FFmpeg](https://mundobytes.com/pt/Comandos-pr%C3%A1ticos-com-FFMPEG-para-converter-formatos-no-Linux/) 🎬  
-
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Abra issues ou pull requests para melhorias e correções.
 
 ## 📄 Licença
 
 Este projeto está licenciado sob a licença GNU.
-
-*Obrigado por visitar o VideoManager!*
