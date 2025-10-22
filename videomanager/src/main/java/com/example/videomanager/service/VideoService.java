@@ -23,7 +23,7 @@ public class VideoService {
     }
 
     private Video toEntity(VideoDto dto) {
-        return new Video(dto.getId(), dto.getTitle(), dto.getDescription(), dto.getUrl(), null);
+        return new Video(dto.id(), dto.title(), dto.description(), dto.url(), null);
     }
 
     public List<VideoDto> getAllVideos() {
@@ -45,9 +45,9 @@ public class VideoService {
     public VideoDto updateVideo(Long id, VideoDto videoDto) {
         Video video = videoRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException(VIDEO_NOT_FOUND + id));
-        video.setTitle(videoDto.getTitle());
-        video.setDescription(videoDto.getDescription());
-        video.setUrl(videoDto.getUrl());
+        video.setTitle(videoDto.title());
+        video.setDescription(videoDto.description());
+        video.setUrl(videoDto.url());
         Video saved = videoRepository.save(video);
         return toDto(saved);
     }
