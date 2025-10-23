@@ -4,6 +4,7 @@ import com.example.videomanager.model.Video;
 import com.example.videomanager.repository.VideoRepository;
 import com.example.videomanager.dto.VideoDto;
 import com.example.videomanager.exception.NotFoundException;
+import com.example.videomanager.mapper.VideoMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,34 +22,17 @@ public class VideoService {
 
     private static final String VIDEO_NOT_FOUND = "Video not found with id ";
     private final VideoRepository videoRepository;
+    private final VideoMapper videoMapper;
 
     /**
      * Constructs a new VideoService with the given VideoRepository.
      *
      * @param videoRepository the repository to handle video data access.
+     * @param videoMapper to serializer and deserializer the object.
      */
-    public VideoService(VideoRepository videoRepository) {
+    public VideoService(VideoRepository videoRepository, VideoMapper videoMapper) {
         this.videoRepository = videoRepository;
-    }
-
-    /**
-     * Converts a {@link Video} entity to a {@link VideoDto}.
-     *
-     * @param v the Video entity to convert.
-     * @return the converted VideoDto.
-     */
-    private VideoDto toDto(Video v) {
-        return new VideoDto(v.getId(), v.getTitle(), v.getDescription(), v.getUrl());
-    }
-
-    /**
-     * Converts a {@link VideoDto} to a {@link Video} entity.
-     *
-     * @param dto the VideoDto to convert.
-     * @return the converted Video entity.
-     */
-    private Video toEntity(VideoDto dto) {
-        return new Video(dto.id(), dto.title(), dto.description(), dto.url(), null);
+        this.videoMapper = videoMapper;
     }
 
     /**
@@ -57,7 +41,7 @@ public class VideoService {
      * @return a list of all videos.
      */
     public List<VideoDto> getAllVideos() {
-        return videoRepository.findAll().stream().map(this::toDto).toList();
+        return videoRepository.findAll().stream().map(videoMapper::toDto).toList();
     }
 
     /**
@@ -70,7 +54,7 @@ public class VideoService {
     public VideoDto getVideoById(Long id) {
         Video v = videoRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException(VIDEO_NOT_FOUND + id));
-        return toDto(v);
+        return videoMapper.toDto(v);
     }
 
     /**
@@ -80,9 +64,9 @@ public class VideoService {
      * @return the created video.
      */
     public VideoDto createVideo(VideoDto videoDto) {
-        Video video = toEntity(videoDto);
+        Video video = videoMapper.toEntity(videoDto);
         Video saved = videoRepository.save(video);
-        return toDto(saved);
+        return videoMapper.toDto(saved);
     }
 
     /**
@@ -100,7 +84,7 @@ public class VideoService {
         video.setDescription(videoDto.description());
         video.setUrl(videoDto.url());
         Video saved = videoRepository.save(video);
-        return toDto(saved);
+        return videoMapper.toDto(saved);
     }
 
     /**

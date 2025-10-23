@@ -1,11 +1,11 @@
 package com.example.videomanager.service;
 
 import com.example.videomanager.dto.VideoDto;
+import com.example.videomanager.mapper.VideoMapper;
 import com.example.videomanager.model.Video;
 import com.example.videomanager.repository.VideoRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
@@ -21,7 +21,9 @@ class VideoServiceTest {
     @Mock
     private VideoRepository videoRepository;
 
-    @InjectMocks
+    @Mock
+    private VideoMapper videoMapper;
+
     private VideoService videoService;
 
     /**
@@ -30,6 +32,7 @@ class VideoServiceTest {
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
+        videoService = new VideoService(videoRepository, videoMapper);
     }
 
     /**
@@ -46,7 +49,12 @@ class VideoServiceTest {
         video.setDescription("Test Description");
         video.setUrl("http://testurl.com");
 
+        VideoDto videoDtoSaved = new VideoDto(1L,"Test Video", "Test Description", "http://testurl.com");
+
+        when(videoMapper.toEntity(any(VideoDto.class))).thenReturn(video);
         when(videoRepository.save(any(Video.class))).thenReturn(video);
+        when(videoMapper.toDto(any(Video.class))).thenReturn(videoDtoSaved);
+
 
         // Act
         VideoDto result = videoService.createVideo(videoDto);
