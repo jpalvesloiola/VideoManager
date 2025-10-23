@@ -1,6 +1,3 @@
-# Ignore the target directory
-target/
-
 # Ignore Maven wrapper files
 .mvn/
 
