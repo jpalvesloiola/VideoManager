@@ -1,7 +1,0 @@
-/app/videomanager/src/main/java/com/example/videomanager/VideoManagerApplication.java
-/app/videomanager/src/main/java/com/example/videomanager/controller/VideoController.java
-/app/videomanager/src/main/java/com/example/videomanager/dto/VideoDto.java
-/app/videomanager/src/main/java/com/example/videomanager/exception/NotFoundException.java
-/app/videomanager/src/main/java/com/example/videomanager/model/Video.java
-/app/videomanager/src/main/java/com/example/videomanager/repository/VideoRepository.java
-/app/videomanager/src/main/java/com/example/videomanager/service/VideoService.java
