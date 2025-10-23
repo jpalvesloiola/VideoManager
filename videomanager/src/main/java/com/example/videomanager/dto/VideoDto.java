@@ -16,7 +16,7 @@ public record VideoDto(
 
         @NotBlank(message = "url must not be blank")
         @Size(max = 2000)
-    @Pattern(regexp = "^(http|https)://[^ \"]+$", message = "url must be a valid URL")
+        @Pattern(regexp = "^(http|https)://[^ \"]+$", message = "url must be a valid URL")
         String url
 ) {
 }
