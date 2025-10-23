@@ -24,4 +24,38 @@ hs_err_pid*
 replay_pid*
 
 # Maven
-/target/
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Emacs/vim
+*~
+*.swp
+
+# VSCode
+.vscode
+.classpath
+.project
+.settings/
+
+# MacOS
+.DS_Store
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+.nb-gradle/
