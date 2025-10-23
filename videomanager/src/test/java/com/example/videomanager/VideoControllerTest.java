@@ -14,6 +14,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.web.servlet.MockMvc;
 
+/**
+ * Integration tests for the {@link com.example.videomanager.controller.VideoController} class.
+ */
 @SpringBootTest(classes = com.example.videomanager.VideoManagerApplication.class)
 @AutoConfigureMockMvc
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
@@ -27,12 +30,20 @@ class VideoControllerTest {
 
     private VideoDto savedVideo;
 
+    /**
+     * Sets up the test environment before each test.
+     */
     @BeforeEach
     void setUp() {
         VideoDto videoDto = new VideoDto(null, "Test Video", "Test Description", "http://testurl.com");
         savedVideo = videoService.createVideo(videoDto);
     }
 
+    /**
+     * Tests the creation of a video.
+     *
+     * @throws Exception if an error occurs during the test.
+     */
     @Test
     void testCreateVideo() throws Exception {
         mockMvc.perform(post("/videos")
@@ -42,6 +53,11 @@ class VideoControllerTest {
                 .andExpect(jsonPath("$.title").value("New Video"));
     }
 
+    /**
+     * Tests the creation of a video with an invalid URL.
+     *
+     * @throws Exception if an error occurs during the test.
+     */
     @Test
     void testCreateVideoWithInvalidUrl() throws Exception {
         mockMvc.perform(post("/videos")
@@ -50,6 +66,11 @@ class VideoControllerTest {
                 .andExpect(status().isBadRequest());
     }
 
+    /**
+     * Tests the retrieval of a video.
+     *
+     * @throws Exception if an error occurs during the test.
+     */
     @Test
     void testGetVideo() throws Exception {
         mockMvc.perform(get("/videos/" + savedVideo.id()))
@@ -57,6 +78,11 @@ class VideoControllerTest {
                 .andExpect(jsonPath("$.title").value("Test Video"));
     }
 
+    /**
+     * Tests the update of a video.
+     *
+     * @throws Exception if an error occurs during the test.
+     */
     @Test
     void testUpdateVideo() throws Exception {
         mockMvc.perform(put("/videos/" + savedVideo.id())
@@ -66,6 +92,11 @@ class VideoControllerTest {
                 .andExpect(jsonPath("$.title").value("Updated Video"));
     }
 
+    /**
+     * Tests the deletion of a video.
+     *
+     * @throws Exception if an error occurs during the test.
+     */
     @Test
     void testDeleteVideo() throws Exception {
         mockMvc.perform(delete("/videos/" + savedVideo.id()))

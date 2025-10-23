@@ -1,8 +1,8 @@
 # 📽️ VideoManager API
 
-Projeto de uma API REST para gerenciamento de vídeos, construída com Java 21, Spring Boot 3 e MySQL 8. O projeto está totalmente containerizado com Docker e expõe métricas para monitoramento com Prometheus.
+A RESTful API for managing videos, built with Java 21, Spring Boot 3, and MySQL 8. The project is fully containerized with Docker and exposes metrics for monitoring with Prometheus.
 
-## ✅ Tecnologias Utilizadas
+## ✅ Technologies Used
 
 - **Java 21**
 - **Spring Boot 3** (Web, Data JPA, Validation, Actuator)
@@ -10,82 +10,82 @@ Projeto de uma API REST para gerenciamento de vídeos, construída com Java 21, 
 - **Hibernate 6**
 - **Maven**
 - **Docker & Docker Compose**
-- **Micrometer & Prometheus** para métricas
+- **Micrometer & Prometheus** for metrics
 
-## ⚙️ Pré-requisitos
+## ⚙️ Prerequisites
 
 - Java 21+
 - Maven 3.8+
 - Docker
 - Docker Compose
 
-## 🚀 Como Executar o Projeto
+## 🚀 How to Run the Project
 
-Existem duas maneiras de executar a aplicação:
+There are two ways to run the application:
 
-### 1. Usando Docker Compose (Recomendado)
+### 1. Using Docker Compose (Recommended)
 
-Este é o método mais simples. Ele irá construir a imagem da aplicação e subir os contêineres da API e do banco de dados de uma vez só.
+This is the simplest method. It will build the application image and start the API and database containers at once.
 
-1.  **Construa o JAR da aplicação:**
+1.  **Build the application JAR:**
     ```bash
     cd videomanager
     ./mvnw package
     ```
 
-2.  **Suba os contêineres:**
+2.  **Start the containers:**
     ```bash
-    sudo docker compose up -d
+    sudo docker-compose up -d
     ```
 
-A API estará disponível em `http://localhost:8080`.
+The API will be available at `http://localhost:8080`.
 
-### 2. Executando Localmente
+### 2. Running Locally
 
-Este método é útil para desenvolvimento e depuração.
+This method is useful for development and debugging.
 
-1.  **Inicie o banco de dados com Docker:**
+1.  **Start the database with Docker:**
     ```bash
     cd videomanager
-    sudo docker compose up -d db
+    sudo docker-compose up -d db
     ```
 
-2.  **Construa o JAR da aplicação:**
+2.  **Build the application JAR:**
     ```bash
     ./mvnw package
     ```
 
-3.  **Execute o JAR:**
+3.  **Run the JAR:**
     ```bash
     java -jar target/videomanager-0.0.1-SNAPSHOT.jar
     ```
 
-A API estará disponível em `http://localhost:8080`.
+The API will be available at `http://localhost:8080`.
 
-## 📊 Monitoramento com Prometheus
+## 📊 Monitoring with Prometheus
 
-Com a aplicação em execução, você pode acessar o endpoint de métricas, que está pronto para ser consumido por um servidor Prometheus.
+With the application running, you can access the metrics endpoint, which is ready to be consumed by a Prometheus server.
 
-- **URL do Endpoint:** `http://localhost:8080/actuator/prometheus`
+- **Endpoint URL:** `http://localhost:8080/actuator/prometheus`
 
-## 📖 Endpoints da API
+## 📖 API Endpoints
 
-- `POST /videos`: Cria um novo vídeo.
-- `GET /videos`: Retorna uma lista de todos os vídeos.
-- `GET /videos/{id}`: Retorna um vídeo específico pelo seu ID.
-- `PUT /videos/{id}`: Atualiza um vídeo existente.
-- `DELETE /videos/{id}`: Deleta um vídeo.
+- `POST /videos`: Creates a new video.
+- `GET /videos`: Returns a list of all videos.
+- `GET /videos/{id}`: Returns a specific video by its ID.
+- `PUT /videos/{id}`: Updates an existing video.
+- `DELETE /videos/{id}`: Deletes a video.
 
-### Exemplo de corpo para `POST /videos`:
+### Example body for `POST /videos`:
 
 ```json
 {
-  "title": "Meu Vídeo Incrível",
-  "description": "Uma descrição detalhada do vídeo.",
+  "title": "My Awesome Video",
+  "description": "A detailed description of the video.",
   "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 }
 ```
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está licenciado sob a licença GNU.
+This project is licensed under the GNU license.

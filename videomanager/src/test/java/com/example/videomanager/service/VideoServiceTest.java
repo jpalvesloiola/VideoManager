@@ -13,6 +13,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
+/**
+ * Unit tests for the {@link VideoService} class.
+ */
 class VideoServiceTest {
 
     @Mock
@@ -23,16 +26,22 @@ class VideoServiceTest {
 
     private VideoService videoService;
 
+    /**
+     * Sets up the test environment before each test.
+     */
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
         videoService = new VideoService(videoRepository, videoMapper);
     }
 
+    /**
+     * Tests the creation of a video.
+     */
     @Test
     void testCreateVideo() {
         // Arrange
-        VideoDto videoDto = new VideoDto(null,"Test Video", "Test Description", "http://testurl.com");
+        VideoDto videoDto = new VideoDto(null, "Test Video", "Test Description", "http://testurl.com");
 
         Video video = new Video();
         video.setId(1L);
