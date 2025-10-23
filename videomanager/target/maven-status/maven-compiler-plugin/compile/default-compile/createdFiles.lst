@@ -1,0 +1,8 @@
+com/example/videomanager/VideoManagerApplication.class
+com/example/videomanager/model/Video.class
+com/example/videomanager/controller/VideoController.class
+com/example/videomanager/dto/VideoDto.class
+com/example/videomanager/exception/NotFoundException.class
+com/example/videomanager/repository/VideoRepository.class
+com/example/videomanager/config/SwaggerConfig.class
+com/example/videomanager/service/VideoService.class

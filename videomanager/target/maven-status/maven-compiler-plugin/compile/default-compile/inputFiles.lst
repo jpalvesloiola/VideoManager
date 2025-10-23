@@ -1,4 +1,5 @@
 /app/videomanager/src/main/java/com/example/videomanager/VideoManagerApplication.java
+/app/videomanager/src/main/java/com/example/videomanager/config/SwaggerConfig.java
 /app/videomanager/src/main/java/com/example/videomanager/controller/VideoController.java
 /app/videomanager/src/main/java/com/example/videomanager/dto/VideoDto.java
 /app/videomanager/src/main/java/com/example/videomanager/exception/NotFoundException.java

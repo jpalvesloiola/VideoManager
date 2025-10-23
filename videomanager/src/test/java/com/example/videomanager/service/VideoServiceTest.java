@@ -29,10 +29,7 @@ class VideoServiceTest {
     @Test
     void testCreateVideo() {
         // Arrange
-        VideoDto videoDto = new VideoDto();
-        videoDto.setTitle("Test Video");
-        videoDto.setDescription("Test Description");
-        videoDto.setUrl("http://testurl.com");
+        VideoDto videoDto = new VideoDto(null, "Test Video", "Test Description", "http://testurl.com");
 
         Video video = new Video();
         video.setId(1L);
@@ -46,6 +43,6 @@ class VideoServiceTest {
         VideoDto result = videoService.createVideo(videoDto);
 
         // Assert
-        assertEquals("Test Video", result.getTitle());
+        assertEquals("Test Video", result.title());
     }
 }
